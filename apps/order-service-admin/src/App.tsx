@@ -25,6 +25,10 @@ import { ProductList } from "./product/ProductList";
 import { ProductCreate } from "./product/ProductCreate";
 import { ProductEdit } from "./product/ProductEdit";
 import { ProductShow } from "./product/ProductShow";
+import { DriverList } from "./driver/DriverList";
+import { DriverCreate } from "./driver/DriverCreate";
+import { DriverEdit } from "./driver/DriverEdit";
+import { DriverShow } from "./driver/DriverShow";
 import { jwtAuthProvider } from "./auth-provider/ra-auth-jwt";
 
 const App = (): React.ReactElement => {
@@ -85,6 +89,13 @@ const App = (): React.ReactElement => {
           edit={ProductEdit}
           create={ProductCreate}
           show={ProductShow}
+        />
+        <Resource
+          name="Driver"
+          list={DriverList}
+          edit={DriverEdit}
+          create={DriverCreate}
+          show={DriverShow}
         />
       </Admin>
     </div>
